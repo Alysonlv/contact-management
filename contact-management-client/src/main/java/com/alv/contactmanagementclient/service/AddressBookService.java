@@ -11,6 +11,9 @@ import com.contact.management.service.ContactManageServiceImpl;
 
 import java.util.List;
 
+/*
+Primary interface that is responsible for create the responses
+ */
 public class AddressBookService {
 
     private ContactManageService service;

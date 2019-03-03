@@ -18,6 +18,9 @@ import java.util.stream.Collectors;
 import static com.contact.management.domain.to.utils.ContactMarshaller.marshal;
 import static com.contact.management.domain.to.utils.ContactMarshaller.unmarshal;
 
+/*
+ The repository interface, where the logical task will be done to recover the data
+ */
 public class ContactManagerRepository {
     
     private ContactManagerDB db;

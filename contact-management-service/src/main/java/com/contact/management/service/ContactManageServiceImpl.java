@@ -1,7 +1,4 @@
 package com.contact.management.service;
-/*
- * Created by alysonlv - 2019-03-03
- */
 
 import com.contact.management.domain.to.ContactManagementUser;
 import com.contact.management.domain.to.ContactRecord;
@@ -9,6 +6,10 @@ import com.contact.management.repository.ContactManagerRepository;
 
 import java.util.List;
 
+/*
+ * Created by alysonlv - 2019-03-03
+ * Interface to expose the Address Book Repository
+ */
 public class ContactManageServiceImpl implements ContactManageService {
 
     private  static ContactManagerRepository repository;

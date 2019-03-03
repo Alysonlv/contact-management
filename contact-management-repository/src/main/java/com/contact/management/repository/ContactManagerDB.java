@@ -10,6 +10,10 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Optional;
 
+/*
+Class responsible for deal with the data, this app is using texts files, but could be easily changed to
+a NoSQL database
+ */
 public class ContactManagerDB {
 
     private final String FILE_PATH;
