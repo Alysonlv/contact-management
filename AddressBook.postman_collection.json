@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "9ad001c9-e8c8-4cfd-8af3-6f66a95da868",
+		"name": "AddressBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AddressBook",
+			"item": [
+				{
+					"name": "getAddressBook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/addressbook/alysonlv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addressbook",
+								"alysonlv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getContact",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/addressbook/alysonlv/stark",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addressbook",
+								"alysonlv",
+								"stark"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getContactByFirstName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/addressbook/alysonlv/firstName=arya",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addressbook",
+								"alysonlv",
+								"firstName=arya"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getContactByLastName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/addressbook/alysonlv/lastName=stark",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addressbook",
+								"alysonlv",
+								"lastName=stark"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAddressBook",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/addressbook/alysonlv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addressbook",
+								"alysonlv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteContact",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/addressbook/alysonlv/989585930",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addressbook",
+								"alysonlv",
+								"989585930"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/addressbook/admin/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addressbook",
+								"admin",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAddressBook",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"contactRecord\": {\n\t\t\"id\": 2134416326,\n\t\t\"firstName\": \"Alyson\",\n\t\t\"lastName\": \"Vasconcelos\",\n\t\t\"personalContact\": {\n\t\t\t\"phoneNumber\": \"916906332\",\n\t\t\t\"email\": \"alysonlv@hotmail.com\"\n\t\t},\n\t\t\"businessContact\": null,\n\t\t\"address\": null\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/addressbook/alysonlv",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addressbook",
+								"alysonlv"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createContact",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"contactRecord\": {\n\t\t\"firstName\": \"Ella\",\n\t\t\"lastName\": \"Fanning\",\n\t\t\"personalContact\": {\n\t\t\t\"phoneNumber\": \"916906332\",\n\t\t\t\"email\": \"arya.stark@email.com\"\n\t\t},\n\t\t\"businessContact\": null,\n\t\t\"address\": null\n\t}\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/addressbook/alson",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"addressbook",
+								"alson"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
