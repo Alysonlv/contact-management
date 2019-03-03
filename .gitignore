@@ -1,4 +1,5 @@
-app/target
-client/target
-service/target
+contact-management-client/target
+contact-management-domain/target
+contact-management-repository/target
+contact-management-service/target
 .idea
