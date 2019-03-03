@@ -30,13 +30,6 @@ class AddressBookServiceTest {
     }
 
 
-    @BeforeEach
-    void setUp() {
-    }
-
-    @Test
-    void getAddressBook() {
-    }
 
     @Test
     void saveContact() {

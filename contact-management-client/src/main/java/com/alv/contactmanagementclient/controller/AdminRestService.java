@@ -14,7 +14,7 @@ public class AdminRestService extends AddressBookManagementServiceTemplate {
     @Autowired
     RestTemplate restTemplate;
 
-    @DeleteMapping(value = "/admin/", produces = "application/json")
+    @DeleteMapping(value = "/addressbook/admin/", produces = "application/json")
     public boolean deleteAddressBook() {
         return getService().resetBookAddress();
     }
